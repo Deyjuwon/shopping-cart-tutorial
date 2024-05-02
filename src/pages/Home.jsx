@@ -19,9 +19,9 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="flex items-center justify-center">
+        <div className="flex justify-center ">
             {loading ? <div className="mt-20"><ClipLoader size={100} color="blue"  /></div> : 
-                <div className="grid grid-cols-6 gap-10 ">
+                <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 gap-4 ">
                     {products.map(product => (
                         <ProductCard product={product} key={product.id} />
                     ))}
